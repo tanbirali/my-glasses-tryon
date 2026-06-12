@@ -1,4 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# My Glasses Try-on Studio
+
+Upload a face photo, detect landmarks with MediaPipe Face Landmarker, position eyewear on the canvas, and export the final image as PNG.
+
+## Setup
+
+1. Install dependencies.
+
+```bash
+npm install
+```
+
+2. Copy the environment template if you want to override the MediaPipe endpoints.
+
+```bash
+cp .env.example .env.local
+```
+
+3. Start the app.
+
+```bash
+npm run dev
+```
+
+Open http://localhost:3000.
+
+## Scripts
+
+```bash
+npm run dev
+npm run build
+npm run lint
+npm test
+```
+
+## Architecture
+
+The app is split into small feature-oriented modules:
+
+- `features/glasses-tryon/` contains the UI surface and frame gallery.
+- `hooks/faceDetectorHook.ts` owns upload, detection, canvas rendering, and export state.
+- `lib/` contains reusable detector, landmark, geometry, canvas, image-loading, and environment helpers.
+- `tests/` covers landmark extraction and transform math.
+
+## Environment
+
+The app uses these optional client-side variables:
+
+- `NEXT_PUBLIC_FACE_LANDMARKER_MODEL_URL`
+- `NEXT_PUBLIC_FACE_LANDMARKER_WASM_URL`
+
+If unset, the app falls back to the hosted MediaPipe CDN assets.
+
+## Notes
+
+- Supported upload formats: JPG and PNG.
+- Maximum upload size: 10 MB.
+- The renderer keeps the original image resolution and preserves aspect ratio.This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
 

@@ -8,7 +8,7 @@ export default function Home() {
 
       <div style={{ display: "flex", justifyContent: "flex-end" }}>
         Powered By <Link href="https://ultimatecoder.in/" style={{ textDecoration: "none", color: "blue" }}>
-          Ultimate Coder
+          &nbsp;Ultimate Coder
         </Link>
       </div>
     </div>

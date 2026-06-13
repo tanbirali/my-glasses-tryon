@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useFaceDetector } from "../../hooks/faceDetectorHook";
-
+import Link from "next/link";
 export function GlassesTryOnStudio() {
   const {
     cameraState,
@@ -183,6 +183,11 @@ export function GlassesTryOnStudio() {
             </div>
           </aside>
         </section>
+              <div style={{ display: "flex", justifyContent: "flex-end" }}>
+        Powered By <Link href="/" style={{ textDecoration: "none", color: "blue" }}>
+          Ultimate Coder
+        </Link>
+      </div>
       </div>
     </main>
   );

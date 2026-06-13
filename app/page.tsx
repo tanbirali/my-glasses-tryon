@@ -7,7 +7,7 @@ export default function Home() {
       <GlassesTryOnStudio />
 
       <div style={{ display: "flex", justifyContent: "flex-end" }}>
-        Powered By <Link href="/" style={{ textDecoration: "none", color: "blue" }}>
+        Powered By <Link href="https://ultimatecoder.in/" style={{ textDecoration: "none", color: "blue" }}>
           Ultimate Coder
         </Link>
       </div>

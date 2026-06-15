@@ -1,7 +1,42 @@
-<svg width="800" height="320" viewBox="0 0 800 320" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect x="126" y="82" width="224" height="156" rx="26" stroke="#111111" stroke-width="18"/>
-  <rect x="450" y="82" width="224" height="156" rx="26" stroke="#111111" stroke-width="18"/>
-  <path d="M350 160H450" stroke="#111111" stroke-width="16" stroke-linecap="round"/>
-  <path d="M64 114C86 102 106 96 124 94" stroke="#111111" stroke-width="16" stroke-linecap="round"/>
-  <path d="M736 114C714 102 694 96 676 94" stroke="#111111" stroke-width="16" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420">
+  <defs>
+    <linearGradient id="lens" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3e4c5c"/>
+      <stop offset="100%" stop-color="#8db0d8"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f3eadb"/>
+      <stop offset="100%" stop-color="#bfa98b"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Left frame -->
+  <polygon points="170,120 310,120 350,150 350,250 310,280 170,280 130,250 130,150"
+           fill="url(#lens)" stroke="#1f2633" stroke-width="10"/>
+
+  <!-- Right frame -->
+  <polygon points="690,120 830,120 870,150 870,250 830,280 690,280 650,250 650,150"
+           fill="url(#lens)" stroke="#1f2633" stroke-width="10"/>
+
+  <!-- Outer metallic rims -->
+  <polygon points="160,110 320,110 365,145 365,255 320,290 160,290 115,255 115,145"
+           fill="none" stroke="url(#metal)" stroke-width="6"/>
+  <polygon points="680,110 840,110 885,145 885,255 840,290 680,290 635,255 635,145"
+           fill="none" stroke="url(#metal)" stroke-width="6"/>
+
+  <!-- Bridge -->
+  <path d="M445 135 L555 135 L545 160 L455 160 Z"
+        fill="none" stroke="url(#metal)" stroke-width="6"/>
+
+  <!-- Nose pads -->
+  <path d="M470 175 C455 195,455 220,470 235"
+        fill="none" stroke="url(#metal)" stroke-width="4"/>
+  <path d="M530 175 C545 195,545 220,530 235"
+        fill="none" stroke="url(#metal)" stroke-width="4"/>
+
+  <!-- Temple blocks visible from front -->
+  <rect x="80" y="165" width="55" height="35" rx="4"
+        fill="url(#metal)"/>
+  <rect x="865" y="165" width="55" height="35" rx="4"
+        fill="url(#metal)"/>
 </svg>

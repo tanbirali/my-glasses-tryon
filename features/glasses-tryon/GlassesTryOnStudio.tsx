@@ -177,6 +177,7 @@ export function GlassesTryOnStudio() {
                       </div>
                       <p className="mt-2 text-sm leading-6 text-stone-600">{frame.description}</p>
                     </button>
+                    
                   );
                 })}
               </div>

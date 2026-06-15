@@ -1,7 +1,28 @@
-<svg width="800" height="320" viewBox="0 0 800 320" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M136 94H326C354 94 376 116 376 144V182C376 210 354 232 326 232H136C108 232 86 210 86 182V144C86 116 108 94 136 94Z" stroke="#111111" stroke-width="18" stroke-linejoin="round"/>
-  <path d="M474 94H664C692 94 714 116 714 144V182C714 210 692 232 664 232H474C446 232 424 210 424 182V144C424 116 446 94 474 94Z" stroke="#111111" stroke-width="18" stroke-linejoin="round"/>
-  <path d="M376 160H424" stroke="#111111" stroke-width="16" stroke-linecap="round"/>
-  <path d="M58 126C76 114 98 108 124 106" stroke="#111111" stroke-width="16" stroke-linecap="round"/>
-  <path d="M742 126C724 114 702 108 676 106" stroke="#111111" stroke-width="16" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 713 357">
+  <defs>
+    <linearGradient id="frame" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2d2f2a"/>
+      <stop offset="50%" stop-color="#4a4d43"/>
+      <stop offset="100%" stop-color="#22241f"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Left lens/frame -->
+  <path d="M95 78 L300 78 L325 100 L320 205 L290 230 L115 230 L88 205 L88 100 Z"
+        fill="#7f8578" fill-opacity="0.55"
+        stroke="url(#frame)" stroke-width="16" stroke-linejoin="round"/>
+
+  <!-- Right lens/frame -->
+  <path d="M455 78 L660 78 L685 100 L682 205 L650 230 L475 230 L448 205 L448 100 Z"
+        fill="#7f8578" fill-opacity="0.55"
+        stroke="url(#frame)" stroke-width="16" stroke-linejoin="round"/>
+
+  <!-- Bridge -->
+  <path d="M325 92 L360 92 L360 150 L390 150 L390 92 L455 92"
+        fill="none" stroke="url(#frame)" stroke-width="16"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Top bar -->
+  <line x1="90" y1="72" x2="690" y2="72"
+        stroke="url(#frame)" stroke-width="14" stroke-linecap="round"/>
 </svg>

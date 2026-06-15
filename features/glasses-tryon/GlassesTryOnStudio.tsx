@@ -183,7 +183,7 @@ export function GlassesTryOnStudio() {
             </div>
           </aside>
         </section>
-              <div style={{ display: "flex", justifyContent: "flex-end" }}>
+              <div style={{ display: "flex", justifyContent: "flex-end" }}>Developed by Tanbir Ali
         Powered By <Link href="https://ultimatecoder.in/" style={{ textDecoration: "none", color: "blue" }}>
           &nbsp;Ultimate Coder
         </Link>
